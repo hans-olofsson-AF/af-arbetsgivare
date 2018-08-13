@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HemComponent } from './hem/hem.component';
 import { OmComponent } from './om/om.component';
+import { ArbetsgivareModule } from './arbetsgivare/arbetsgivare.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { OmComponent } from './om/om.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ArbetsgivareModule
   ],
   providers: [],
   bootstrap: [AppComponent]
