@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand" href="#"> <img src="assets/logo.svg"
+		style="height: 39px;"></a>
+	<button class="navbar-toggler ml-auto" type="button"
+		data-toggle="collapse" data-target="#navbarNavAltMarkup"
+		aria-controls="navbarNavAltMarkup" aria-expanded="false"
+		aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		<div class="navbar-nav mr-auto">
+			<a class="nav-item nav-link active" routerLink="/hem">Hem</a> <a
+				class="nav-item nav-link active" routerLink="/arbetsgivare">Arbetsgivare</a>
+			<a class="nav-item nav-link active" routerLink="/om">Om</a>
+		</div>
+<!--
+		<span *ngIf="orgnr && orgnr.length > 0" class="navbar-text mr-2">
+			{{orgnr}}</span>
+		<form class="form-inline my-2 my-lg-0">
+			<input #orgNr (keyup.enter)="setOrgNr(orgNr.value); orgNr.value=''"
+				class="form-control mr-sm-2" type="search"
+				placeholder="ange organisationsnummer"
+				aria-label="Välj organisation">
+		</form>
+-->
+	</div>
+</nav>
