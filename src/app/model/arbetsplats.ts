@@ -1,4 +1,4 @@
-import {HandelseMini} from './handelsemini';
+import {HandelseMini} from './handelseMini';
 import {Kontaktperson} from './kontaktperson';
 
 export class Arbetsplats {
