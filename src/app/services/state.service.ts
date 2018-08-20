@@ -49,7 +49,7 @@ export class StateService {
         if (error.status === 404) {
           this._organisation.next(new Organisation());
           this._errorMessageOrganisation.next(
-            'angivet organisationsnummer existerar ej'
+            'angivet organisation- eller kundnummer existerar ej'
           );
         } else {
           this._organisation.next(new Organisation());

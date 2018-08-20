@@ -1,4 +1,5 @@
 import {HandelseMini} from './handelsemini';
+import {Kontaktperson} from './kontaktperson';
 
 export class Arbetsplats {
   private _kundnr: number;
@@ -10,6 +11,7 @@ export class Arbetsplats {
   private _telefon: string;
   private _epost: string;
   private _kontaktperson: string;
+  private _kontaktpersoner: Array<Kontaktperson>;
   private _handelserMini: Array<HandelseMini>;
 
   get kundnr(): number {
@@ -76,12 +78,12 @@ export class Arbetsplats {
     this._epost = epost;
   }
 
-  get kontaktperson(): string {
-    return this._kontaktperson;
+  get kontaktpersoner(): Array<Kontaktperson> {
+    return this._kontaktpersoner;
   }
 
-  set kontaktperson(kontaktperson: string) {
-    this._kontaktperson = kontaktperson;
+  set kontaktperson(kontaktpersoner: Array<Kontaktperson>) {
+    this._kontaktpersoner = kontaktpersoner;
   }
 
   get handelserMini(): Array<HandelseMini> {

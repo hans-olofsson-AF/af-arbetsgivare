@@ -1,3 +1,15 @@
 <div class="card" style="margin-top: 10px">
-    arbetsplatser works!
+  <div class="card-body ">
+    <h5>Arbetsplatser</h5>
+    <table class="table table-hover">
+      <tbody>
+        <ng-container *ngFor="let arbetsplatsMini of organisation.arbetsplatserMini">
+          <tr (click)="onClick(arbetsplatsMini)">
+            <td class="small">{{ arbetsplatsMini.namn }}</td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+    &nbsp;&nbsp;{{errorMessage}}
+  </div>
 </div>

@@ -1,3 +1,27 @@
 <div class="card" style="margin-top: 10px">
-  kontaktpersoner works!
+  <div class="card-body ">
+    <h5>Kontaktpersoner</h5>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col" class="small">Typ</th>
+          <th scope="col" class="small">Namn</th>
+          <th scope="col" class="small">Epost</th>
+          <th scope="col" class="small">Telefon</th>
+          <th scope="col" class="small">Beskrivning</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let kontaktperson of arbetsplats.kontaktpersoner">
+          <tr>
+            <td class="small">{{ kontaktperson.typ }}</td>
+            <td class="small">{{ kontaktperson.namn }}</td>
+            <td class="small">{{ kontaktperson.epost }}</td>
+            <td class="small">{{ kontaktperson.telnr }}</td>
+            <td class="small">{{ kontaktperson.beskrivning }}</td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+  </div>
 </div>

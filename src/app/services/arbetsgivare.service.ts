@@ -12,13 +12,13 @@ export class ArbetsgivareService {
 
   public getOrganisation(orgnr: string) {
     const url = 'assets/organisation/' + orgnr + '.json';
-    console.log('OrganisationService.getOrganisation - url: ' + url);
+    console.log('ArbetsgivareService.getOrganisation - url: ' + url);
     return this.http.get(url);
   }
 
   public getArbetsplats(kundnr: number) {
     const url = 'assets/arbetsplats/' + kundnr + '.json';
-    console.log('OrganisationService.getArbetsplats - url: ' + url);
+    console.log('ArbetsgivareService.getArbetsplats - url: ' + url);
     return this.http.get(url);
   }
 }

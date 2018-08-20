@@ -9,14 +9,29 @@
     "postort": "Kista",
     "kommun": "Stockholm",
     "lan": "Stockholm",
-    "juridiskForm": "AB",
+    "jurForm": "AB",
     "antalAnstallda": 57,
     "omsattning": 357750000,
     "telefon": "08-594 617 00",
     "epost": "kontakt@intel.se",
     "webbplats": "www.intel.com",
     "logotype": "assets/images/intelLogo.jpg",
-    "agKontroll": 20180101,
+    "kontaktpersoner": [
+      {
+        "typ": "VD",
+        "namn": "Per Anserud",
+        "epost": "per.anserud@intel.se",
+        "telnr": "08-418 75 12",
+        "beskrivning": "En hyvens karl :)"
+      },
+      {
+        "typ": "Controller",
+        "namn": "Göran Oscarsson",
+        "epost": "goran.oscarsson@intel.se",
+        "telnr": "08-418 75 24",
+        "beskrivning": "En hävert på ekonomi :)"
+      }
+    ],
     "arbetsplatserMini": [
         {
             "kundnr": 10820201,

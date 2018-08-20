@@ -1,0 +1,56 @@
+{
+    "kundnr": 10820101,
+    "namn": "Intel - Uppsala",
+    "duns": 10011201,
+    "utdelningsadress": "Alriksgatan 12",
+    "postnr": "741 92",
+    "postort": "Uppsala",
+    "telefon": "018-518 23 00",
+    "epost": "uppsala@intel.se",
+    "kontaktpersoner": [
+      {
+        "typ": "VD",
+        "namn": "Per Anserud",
+        "epost": "per.anserud@intel.se",
+        "telnr": "08-418 75 12",
+        "beskrivning": "En hyvens karl :)"
+      },
+      {
+        "typ": "Controller",
+        "namn": "Göran Oscarsson",
+        "epost": "goran.oscarsson@intel.se",
+        "telnr": "08-418 75 24",
+        "beskrivning": "En hävert på ekonomi :)"
+      }
+    ],
+    "handelserMini": [
+        {
+            "id": 1,
+            "typ": "Frukostseminarium"
+        },
+        {
+            "id": 2,
+            "typ": "Rekryteringsm�ssa"
+        },
+        {
+            "id": 3,
+            "typ": "Rekryteringstr�ff"
+        },
+        {
+            "id": 4,
+            "typ": "Frukostseminarium"
+        },
+        {
+            "id": 5,
+            "typ": "Rekryteringsm�ssa"
+        },
+        {
+            "id": 6,
+            "typ": "Rekryteringstr�ff"
+        },
+        {
+            "id": 7,
+            "typ": "Frukostseminarium"
+        }
+    ]
+}

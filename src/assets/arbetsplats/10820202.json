@@ -1,0 +1,41 @@
+{
+    "kundnr": 10820101,
+    "namn": "Intel - Karlstad",
+    "duns": 10011201,
+    "utdelningsadress": "Storgatan 31",
+    "postnr": "741 92",
+    "postort": "Karlstad",
+    "telefon": "018-518 23 00",
+    "epost": "karlstad@intel.se",
+    "kontaktperson": "Sven-Erik Larsson",
+    "handelserMini": [
+        {
+            "id": 1,
+            "typ": "Frukostseminarium"
+        },
+        {
+            "id": 2,
+            "typ": "Rekryteringsm�ssa"
+        },
+        {
+            "id": 3,
+            "typ": "Rekryteringstr�ff"
+        },
+        {
+            "id": 4,
+            "typ": "Frukostseminarium"
+        },
+        {
+            "id": 5,
+            "typ": "Rekryteringsm�ssa"
+        },
+        {
+            "id": 6,
+            "typ": "Rekryteringstr�ff"
+        },
+        {
+            "id": 7,
+            "typ": "Frukostseminarium"
+        }
+    ]
+}

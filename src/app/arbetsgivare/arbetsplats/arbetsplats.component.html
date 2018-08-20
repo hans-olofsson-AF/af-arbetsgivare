@@ -1,3 +1,30 @@
 <div class="card" style="margin-top: 10px">
-  arbetsplats works!
-</div>
+    <div class="card-body">
+
+      <div class="row mt-2">
+        <div class="col-3 font-weight-bold small">&nbsp;Namn</div>
+        <div class="col-2 font-weight-bold small">Telefon</div>
+        <div class="col-3 font-weight-bold small">Epost</div>
+        <div class="col-2 font-weight-bold small">Kundnr</div>
+        <div class="col-2 font-weight-bold small">Duns</div>
+      </div>
+      <div class="row">
+        <div class="col-3 small">&nbsp;{{arbetsplats.namn}}</div>
+        <div class="col-2 small">{{arbetsplats.telefon}}</div>
+        <div class="col-3 small">{{arbetsplats.epost}}</div>
+        <div class="col-2 small">{{arbetsplats.kundnr}}</div>
+        <div class="col-2 small">{{arbetsplats.duns}}</div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-4 font-weight-bold small">&nbsp;Adress</div>
+        <div class="col-4 font-weight-bold small">Postnummer</div>
+        <div class="col-4 font-weight-bold small">Postort</div>
+      </div>
+      <div class="row">
+        <div class="col-4 small">&nbsp;{{arbetsplats.utdelningsadress}}</div>
+        <div class="col-4 small">{{arbetsplats.postnr}}</div>
+        <div class="col-4 small">{{arbetsplats.postort}}</div>
+      </div>
+    </div>
+  </div>
+  <app-tjansteanteckningar-organisation></app-tjansteanteckningar-organisation>

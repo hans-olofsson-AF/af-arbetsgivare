@@ -1,0 +1,45 @@
+{
+  "kundnr": 10820200,
+  "orgnr": "5561896027",
+  "orgnamn": "Intel Sweden AB",
+  "orgtyp": "Svenskt",
+  "duns": 10011200,
+  "utdelningsadress": "Isafjordsgatan 30 B",
+  "postnr": "164 40",
+  "postort": "Kista",
+  "kommun": "Stockholm",
+  "lan": "Stockholm",
+  "jurForm": "AB",
+  "antalAnstallda": 57,
+  "omsattning": 357750000,
+  "telefon": "08-594 617 00",
+  "epost": "kontakt@intel.se",
+  "webbplats": "www.intel.com",
+  "logotype": "assets/images/intelLogo.jpg",
+  "kontaktpersoner": [
+    {
+      "typ": "VD",
+      "namn": "Per Anserud",
+      "epost": "per.anserud@intel.se",
+      "telnr": "08-418 75 12",
+      "beskrivning": "En hyvens karl :)"
+    },
+    {
+      "typ": "Controller",
+      "namn": "Göran Oscarsson",
+      "epost": "goran.oscarsson@intel.se",
+      "telnr": "08-418 75 24",
+      "beskrivning": "En hävert på ekonomi :)"
+    }
+  ],
+  "arbetsplatserMini": [
+      {
+          "kundnr": 10820201,
+          "namn": "Intel Sweden - Uppsala"
+      },
+      {
+          "kundnr": 10820202,
+          "namn": "Intel Sweden - Karlstad"
+      }
+  ]
+}

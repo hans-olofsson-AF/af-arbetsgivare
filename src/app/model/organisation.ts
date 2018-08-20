@@ -5,18 +5,19 @@ export class Organisation {
   private _orgnr: string;
   private _orgnamn: string;
   private _orgtyp: string;
+  private _jurForm: string;
   private _duns: number;
   private _utdelningsadress: string;
   private _postnr: string;
   private _postort: string;
-  private _kommunkod: string;
+  private _kommun: string;
+  private _lan: string;
   private _antalAnstallda: number;
   private _omsattning: number;
   private _telefon: string;
   private _epost: string;
   private _webbplats: string;
   private _logotype: string;
-  private _kontaktperson: string;
   private _arbetsplatserMini: Array<ArbetsplatsMini>;
 
   get kundnr(): number {
@@ -41,6 +42,14 @@ export class Organisation {
 
   set orgnamn(orgnamn: string) {
     this._orgnamn = orgnamn;
+  }
+
+  get jurForm(): string {
+    return this._jurForm;
+  }
+
+  set jurForm(jurForm: string) {
+    this._jurForm = jurForm;
   }
 
   get orgtyp(): string {
@@ -83,12 +92,20 @@ export class Organisation {
     this._postort = postort;
   }
 
-  get kommunkod(): string {
-    return this._kommunkod;
+  get kommun(): string {
+    return this._kommun;
   }
 
-  set kommunkod(kommunkod: string) {
-    this._kommunkod = kommunkod;
+  set kommun(kommun: string) {
+    this._kommun = kommun;
+  }
+
+  get lan(): string {
+    return this._lan;
+  }
+
+  set lan(lan: string) {
+    this._lan = lan;
   }
 
   get antalAnstallda(): number {
@@ -137,14 +154,6 @@ export class Organisation {
 
   set logotype(logotype: string) {
     this._logotype = logotype;
-  }
-
-  get kontaktperson(): string {
-    return this._kontaktperson;
-  }
-
-  set kontaktperson(kontaktperson: string) {
-    this._kontaktperson = kontaktperson;
   }
 
   get arbetsplatserMini(): Array<ArbetsplatsMini> {
