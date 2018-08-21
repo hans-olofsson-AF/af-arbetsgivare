@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -23,6 +24,7 @@ import {StateService} from './services/state.service';
   ],
   imports: [
     BrowserModule,
+    NgbModule,
     AppRoutingModule,
     ArbetsgivareModule
   ],

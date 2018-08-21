@@ -23,34 +23,18 @@
         "beskrivning": "En hävert på ekonomi, kallas även 'Nille Ville' :)"
       }
     ],
-    "handelserMini": [
+    "tjansteanteckningar": [
         {
-            "id": 1,
-            "typ": "Frukostseminarium"
+            "rubrik": "Säljare",
+            "text": "Anmäler behov av en säljare ASAP"
         },
         {
-            "id": 2,
-            "typ": "Rekryteringsmässa"
+            "rubrik": "Lokalvårdare",
+            "text": "Behov av två lokalvårdare finns"
         },
         {
-            "id": 3,
-            "typ": "Rekryteringsträff"
-        },
-        {
-            "id": 4,
-            "typ": "Frukostseminarium"
-        },
-        {
-            "id": 5,
-            "typ": "Rekryteringsmässa"
-        },
-        {
-            "id": 6,
-            "typ": "Rekryteringsträff"
-        },
-        {
-            "id": 7,
-            "typ": "Frukostseminarium"
+            "rubrik": "Vaktmästare",
+            "text": "En vaktmästare behövs, tjänstgöring är under kontorstid"
         }
     ]
 }

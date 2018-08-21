@@ -1,4 +1,5 @@
 import {ArbetsplatsMini} from './arbetsplatsmini';
+import {Tjansteanteckning} from './tjansteanteckning';
 
 export class Organisation {
   private _kundnr: number;
@@ -19,6 +20,7 @@ export class Organisation {
   private _webbplats: string;
   private _logotype: string;
   private _arbetsplatserMini: Array<ArbetsplatsMini>;
+  private _tjansteateckningar: Array<Tjansteanteckning>;
 
   get kundnr(): number {
     return this._kundnr;
@@ -162,5 +164,13 @@ export class Organisation {
 
   set arbetsplatserMini(arbetsplatserMini: Array<ArbetsplatsMini>) {
     this._arbetsplatserMini = arbetsplatserMini;
+  }
+
+  get tjansteanteckningar(): Array<Tjansteanteckning> {
+    return this._tjansteateckningar;
+  }
+
+  set tjansteanteckningar(tjansteanteckningar: Array<Tjansteanteckning>) {
+    this._tjansteateckningar = tjansteanteckningar;
   }
 }

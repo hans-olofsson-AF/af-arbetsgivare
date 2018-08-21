@@ -1,4 +1,4 @@
-import {HandelseMini} from './handelseMini';
+import {Tjansteanteckning} from './tjansteanteckning';
 import {Kontaktperson} from './kontaktperson';
 
 export class Arbetsplats {
@@ -10,9 +10,8 @@ export class Arbetsplats {
   private _postort: string;
   private _telefon: string;
   private _epost: string;
-  private _kontaktperson: string;
   private _kontaktpersoner: Array<Kontaktperson>;
-  private _handelserMini: Array<HandelseMini>;
+  private _tjansteanteckningar: Array<Tjansteanteckning>;
 
   get kundnr(): number {
     return this._kundnr;
@@ -82,15 +81,15 @@ export class Arbetsplats {
     return this._kontaktpersoner;
   }
 
-  set kontaktperson(kontaktpersoner: Array<Kontaktperson>) {
+  set kontaktpersoner(kontaktpersoner: Array<Kontaktperson>) {
     this._kontaktpersoner = kontaktpersoner;
   }
 
-  get handelserMini(): Array<HandelseMini> {
-    return this._handelserMini;
+  get tjansteanteckningar(): Array<Tjansteanteckning> {
+    return this._tjansteanteckningar;
   }
 
-  set handelserMini(handelseMini: Array<HandelseMini>) {
-    this._handelserMini = handelseMini;
+  set tjansteanteckningar(tjansteanteckningar: Array<Tjansteanteckning>) {
+    this._tjansteanteckningar = tjansteanteckningar;
   }
 }
