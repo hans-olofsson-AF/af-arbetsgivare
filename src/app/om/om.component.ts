@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OmComponent implements OnInit {
   public isCollapsed = false;
-  public buttonText = 'Visa';
+  public buttonText = 'Dölj';
 
   constructor() { }
 
