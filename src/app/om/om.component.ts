@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./om.component.css']
 })
 export class OmComponent implements OnInit {
+  private buttonTextExpand = 'Visa information';
+  private buttonTextCollapse = 'Dölj information';
   public isCollapsed = false;
-  public buttonText = 'Dölj';
+  public buttonText = this.buttonTextCollapse;
 
   constructor() { }
 
@@ -16,10 +18,10 @@ export class OmComponent implements OnInit {
 
   toggle() {
     if (this.isCollapsed) {
-      this.buttonText = 'Dölj';
+      this.buttonText = this.buttonTextCollapse;
       this.isCollapsed = false;
     } else {
-      this.buttonText = 'Visa';
+      this.buttonText = this.buttonTextExpand;
       this.isCollapsed = true;
     }
   }
