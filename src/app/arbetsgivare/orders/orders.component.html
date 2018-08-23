@@ -1,3 +1,37 @@
-<div class="card" style="margin-top: 5px">
-  orders works!
+<br>
+<button type="button" class="btn btn-outline-primary btn-sm" (click)="toggle()" [attr.aria-expanded]="!isCollapsed" aria-controls="arbetsplats-ordrar">
+  {{buttonText}}
+</button>
+<div id="arbetsplats-ordrar" class="card" style="margin-top: 5px" [ngbCollapse]="isCollapsed">
+  <!--<h6 class="card-header">Arbetsplats - order</h6-->
+  <div class="card-body">
+    <table id="arbetsplats-order" class="table table-hover">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col" class="small">Yrkes benämning</th>
+          <th scope="col" class="small">Platsrubrik</th>
+          <th scope="col" class="small">Tillträde</th>
+          <th scope="col" class="small">Första publ datum</th>
+          <th scope="col" class="small">Sista publ datum</th>
+          <th scope="col" class="small">Sista ansök datum</th>
+          <th scope="col" class="small">Ansökan övrigt</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let orderMini of arbetsplats.orders">
+          <tr (click)="onClick(orderMini)">
+            <td class="small">{{ orderMini.yrkesbenamning }}</td>
+            <td class="small">{{ orderMini.platsrubrik }}</td>
+            <td class="small">{{ orderMini.tilltrade }}</td>
+            <td class="small">{{ orderMini.forstaPubliceringsdatum }}</td>
+            <td class="small">{{ orderMini.sistaPubliceringsdatum }}</td>
+            <td class="small">{{ orderMini.sistaAnsokningsdatum }}</td>
+            <td class="small">{{ orderMini.ansokanOvrigt }}</td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+    &nbsp;&nbsp;
+    <!-- {{errorMessage}} -->
+  </div>
 </div>
