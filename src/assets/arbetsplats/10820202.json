@@ -1,40 +1,70 @@
 {
-    "kundnr": 10820101,
-    "namn": "Intel - Karlstad",
-    "duns": 10011201,
-    "utdelningsadress": "Bävergränd 18",
-    "postnr": "652 29",
-    "postort": "Karlstad",
-    "telefon": "054-73 18 00",
-    "epost": "karlstad@intel.se",
-    "kontaktpersoner": [
-      {
-        "typ": "Platschef",
-        "namn": "Nils Mårdh",
-        "epost": "nils.mardhd@intel.se",
-        "telnr": "00548-41 15 29",
-        "beskrivning": "En duglig platschef :)"
-      },
-      {
-        "typ": "Ekonomichef",
-        "namn": "Villiam Nilsson",
-        "epost": "villiam.nilss@intel.se",
-        "telnr": "054-415 15 30",
-        "beskrivning": "En hävert på ekonomi, kallas även 'Nille Ville' :)"
-      }
-    ],
-    "tjansteanteckningar": [
-        {
-            "rubrik": "Säljare",
-            "text": "Anmäler behov av en säljare ASAP"
-        },
-        {
-            "rubrik": "Lokalvårdare",
-            "text": "Behov av två lokalvårdare finns"
-        },
-        {
-            "rubrik": "Vaktmästare",
-            "text": "En vaktmästare behövs, tjänstgöring är under kontorstid"
-        }
-    ]
+  "kundnr": 10820101,
+  "namn": "Intel - Karlstad",
+  "duns": 10011201,
+  "utdelningsadress": "Bävergränd 18",
+  "postnr": "652 29",
+  "postort": "Karlstad",
+  "telefon": "054-73 18 00",
+  "epost": "karlstad@intel.se",
+  "kontaktpersoner": [
+    {
+      "typ": "Platschef",
+      "namn": "Nils Mårdh",
+      "epost": "nils.mardhd@intel.se",
+      "telnr": "00548-41 15 29",
+      "beskrivning": "En duglig platschef :)"
+    },
+    {
+      "typ": "Ekonomichef",
+      "namn": "Villiam Nilsson",
+      "epost": "villiam.nilss@intel.se",
+      "telnr": "054-415 15 30",
+      "beskrivning": "En hävert på ekonomi, kallas även 'Nille Ville' :)"
+    }
+  ],
+  "tjansteanteckningar": [
+    {
+      "rubrik": "Säljare",
+      "text": "Anmäler behov av en säljare ASAP"
+    },
+    {
+      "rubrik": "Lokalvårdare",
+      "text": "Behov av två lokalvårdare finns"
+    },
+    {
+      "rubrik": "Vaktmästare",
+      "text": "En vaktmästare behövs, tjänstgöring är under kontorstid"
+    },
+    {
+      "rubrik": "IT-tekniker",
+      "text": "Anmäler stort behov av IT-tekniker"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "yrkesbenamning": "IT-tekniker",
+      "platsrubrik": "IT-tekniker med stor kunskap om virtualisering sökes",
+      "tilltrade": "2018-10-01",
+      "forstaPubliceringsdatum": "2018-08-01",
+      "sistaPubliceringsdatum": "2018-09-01",
+      "sistaPubldatum": "2018-09-01",
+      "sistaAnsokPubldatum": "2018-09-15",
+      "sistaAnsokningsdatum": "2018-09-20",
+      "ansokanOvrigt": "Arbetgivaren har stort fokus på att gå mot virtualiserade miljöer"
+    },
+    {
+      "id": 2,
+      "yrkesbenamning": "IT-tekniker",
+      "platsrubrik": "IT-tekniker med stor kunskap om nätverksbaserad lagring sökes",
+      "tilltrade": "2018-11-01",
+      "forstaPubliceringsdatum": "2018-08-01",
+      "sistaPubliceringsdatum": "2018-10-01",
+      "sistaPubldatum": "2018-10-01",
+      "sistaAnsokPubldatum": "2018-10-15",
+      "sistaAnsokningsdatum": "2018-10-20",
+      "ansokanOvrigt": "Arbetgivaren har stort fokus på att gå mot nätverksbaserad lagrings  miljöer"
+    }
+  ]
 }
