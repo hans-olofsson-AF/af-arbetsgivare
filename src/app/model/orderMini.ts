@@ -5,8 +5,6 @@ export class OrderMini {
   private _tilltrade: Date;
   private _forstaPubliceringsdatum: Date;
   private _sistaPubliceringsdatum: Date;
-  private _sistaPubldatum: Date;
-  private _sistaAnsokPubldatum: Date;
   private _sistaAnsokningsdatum: Date;
   private _ansokanOvrigt: string;
 
@@ -67,22 +65,6 @@ export class OrderMini {
   }
 
   /**
-   * Getter sistaPubldatum
-   * @return {Date}
-   */
-  public get sistaPubldatum(): Date {
-    return this._sistaPubldatum;
-  }
-
-  /**
-   * Getter sistaAnsokPubldatum
-   * @return {Date}
-   */
-  public get sistaAnsokPubldatum(): Date {
-    return this._sistaAnsokPubldatum;
-  }
-
-  /**
    * Getter sistaAnsokningsdatum
    * @return {Date}
    */
@@ -136,22 +118,6 @@ export class OrderMini {
    */
   public set sistaPubliceringsdatum(value: Date) {
     this._sistaPubliceringsdatum = value;
-  }
-
-  /**
-   * Setter sistaPubldatum
-   * @param {Date} value
-   */
-  public set sistaPubldatum(value: Date) {
-    this._sistaPubldatum = value;
-  }
-
-  /**
-   * Setter sistaAnsokPubldatum
-   * @param {Date} value
-   */
-  public set sistaAnsokPubldatum(value: Date) {
-    this._sistaAnsokPubldatum = value;
   }
 
   /**
