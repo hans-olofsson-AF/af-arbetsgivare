@@ -1,5 +1,6 @@
 import {Tjansteanteckning} from './tjansteanteckning';
 import {Kontaktperson} from './kontaktperson';
+import {OrderMini} from './orderMini';
 
 export class Arbetsplats {
   private _kundnr: number;
@@ -12,6 +13,7 @@ export class Arbetsplats {
   private _epost: string;
   private _kontaktpersoner: Array<Kontaktperson>;
   private _tjansteanteckningar: Array<Tjansteanteckning>;
+  private _orders: Array<OrderMini>;
 
   get kundnr(): number {
     return this._kundnr;
@@ -91,5 +93,13 @@ export class Arbetsplats {
 
   set tjansteanteckningar(tjansteanteckningar: Array<Tjansteanteckning>) {
     this._tjansteanteckningar = tjansteanteckningar;
+  }
+
+  get orders(): Array<OrderMini> {
+    return this._orders;
+  }
+
+  set orders(orders: Array<OrderMini>) {
+    this._orders = orders;
   }
 }
