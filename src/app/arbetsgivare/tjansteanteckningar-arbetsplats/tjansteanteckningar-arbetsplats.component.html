@@ -1,6 +1,8 @@
-<div class="card" style="margin-top: 5px">
+<button type="button" class="btn btn-outline-primary btn-sm" (click)="toggle()" [attr.aria-expanded]="!isCollapsed" aria-controls="arbetspats-tjansteanteckningar">
+  {{buttonText}}
+</button>
+<div id="arbetsplats-tjansteanteckningar" class="card" style="margin-top: 5px" [ngbCollapse]="isCollapsed">
   <div class="card-body ">
-    <h6>Arbetsplats - tjänsteanteckningar</h6>
     <table class="table table-hover">
       <thead class="thead-light">
         <tr>

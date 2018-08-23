@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import {StateService} from '../../services/state.service';
+import { StateService } from '../../services/state.service';
 
-import {Arbetsplats} from '../../model/arbetsplats';
+import { Arbetsplats } from '../../model/arbetsplats';
 
 @Component({
   selector: 'app-tjansteanteckningar-arbetsplats',
@@ -11,10 +11,24 @@ import {Arbetsplats} from '../../model/arbetsplats';
 })
 export class TjansteanteckningarArbetsplatsComponent implements OnInit {
   arbetsplats: Arbetsplats = new Arbetsplats();
+  private buttonTextExpand = 'Visa tjänsteanteckningar';
+  private buttonTextCollapse = 'Dölj tjänsteanteckningar';
+  public isCollapsed = true;
+  public buttonText = this.buttonTextExpand;
 
-  constructor(private state: StateService) { }
+  constructor(private state: StateService) {}
 
   ngOnInit() {
-    this.state.arbetsplats.subscribe(res => this.arbetsplats = res);
+    this.state.arbetsplats.subscribe(res => (this.arbetsplats = res));
+  }
+
+  toggle() {
+    if (this.isCollapsed) {
+      this.buttonText = this.buttonTextCollapse;
+      this.isCollapsed = false;
+    } else {
+      this.buttonText = this.buttonTextExpand;
+      this.isCollapsed = true;
+    }
   }
 }
