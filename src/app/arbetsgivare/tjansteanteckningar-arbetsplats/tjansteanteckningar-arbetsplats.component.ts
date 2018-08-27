@@ -11,8 +11,8 @@ import { Arbetsplats } from '../../model/arbetsplats';
 })
 export class TjansteanteckningarArbetsplatsComponent implements OnInit {
   arbetsplats: Arbetsplats = new Arbetsplats();
-  private buttonTextExpand = 'Visa tjänsteanteckningar';
-  private buttonTextCollapse = 'Dölj tjänsteanteckningar';
+  private buttonTextExpand = 'Arbetsplats-tjänsteanteckningar - VISA';
+  private buttonTextCollapse = 'Arbetsplats-tjänsteanteckningar - DÖLJ';
   public isCollapsed = true;
   public buttonText = this.buttonTextExpand;
 

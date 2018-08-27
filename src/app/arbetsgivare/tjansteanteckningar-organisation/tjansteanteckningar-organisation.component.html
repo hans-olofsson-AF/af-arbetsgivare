@@ -1,6 +1,8 @@
-<div class="card" style="margin-top: 5px">
-  <h6 class="card-header">Organisation - tjänsteanteckningar</h6>
-  <div class="card-body">
+<button type="button" class="btn btn-outline-primary btn-sm" (click)="toggle()" [attr.aria-expanded]="!isCollapsed" aria-controls="organisation-tjansteanteckningar">
+  {{buttonText}}
+</button>
+<div id="organisation-tjansteanteckningar" class="card" style="margin-top: 5px" [ngbCollapse]="isCollapsed">
+  <div class="card-body ">
     <table class="table table-hover">
       <thead class="thead-light">
         <tr>
