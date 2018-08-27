@@ -13,6 +13,10 @@ import {ArbetsplatsMini} from '../../model/arbetsplatsmini';
 export class ArbetsplatserComponent implements OnInit {
   organisation: Organisation = new Organisation();
   errorMessage: string;
+  private buttonTextExpand = 'Organisation-arbetsplatser - VISA';
+  private buttonTextCollapse = 'Organisation-arbetsplatser - DÖLJ';
+  public isCollapsed = false;
+  public buttonText = this.buttonTextCollapse;
 
   constructor(private state: StateService) { }
 
@@ -24,5 +28,15 @@ export class ArbetsplatserComponent implements OnInit {
   onClick(arbetsplatsMini: ArbetsplatsMini) {
     console.log('klickad arbetsplats: ' + arbetsplatsMini.namn);
     this.state.loadArbetsplats(arbetsplatsMini.kundnr);
+  }
+
+  toggle() {
+    if (this.isCollapsed) {
+      this.buttonText = this.buttonTextCollapse;
+      this.isCollapsed = false;
+    } else {
+      this.buttonText = this.buttonTextExpand;
+      this.isCollapsed = true;
+    }
   }
 }
