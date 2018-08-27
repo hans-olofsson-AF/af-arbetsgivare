@@ -11,10 +11,24 @@ import {Arbetsplats} from '../../model/arbetsplats';
 })
 export class KontaktpersonerComponent implements OnInit {
   arbetsplats: Arbetsplats = new Arbetsplats();
+  private buttonTextExpand = 'Arbetsplats-kontaktpersoner - VISA';
+  private buttonTextCollapse = 'Arbetsplats-kontaktpersoner - DÖLJ';
+  public isCollapsed = false;
+  public buttonText = this.buttonTextCollapse;
 
   constructor(private state: StateService) { }
 
   ngOnInit() {
    this.state.arbetsplats.subscribe(res => this.arbetsplats = res);
+  }
+
+  toggle() {
+    if (this.isCollapsed) {
+      this.buttonText = this.buttonTextCollapse;
+      this.isCollapsed = false;
+    } else {
+      this.buttonText = this.buttonTextExpand;
+      this.isCollapsed = true;
+    }
   }
 }
