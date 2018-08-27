@@ -12,8 +12,8 @@ import { OrderMini } from '../../model/orderMini';
 })
 export class OrdersComponent implements OnInit {
   public arbetsplats: Arbetsplats = new Arbetsplats();
-  private buttonTextExpand = 'Visa ordrar';
-  private buttonTextCollapse = 'Dölj ordrar';
+  private buttonTextExpand = 'Arbetsplats-ordrar - VISA';
+  private buttonTextCollapse = 'Arbetsplats-ordrar - DÖLJ';
   public isCollapsed = true;
   public buttonText = this.buttonTextExpand;
 
