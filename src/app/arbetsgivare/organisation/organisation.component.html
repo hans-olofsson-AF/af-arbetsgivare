@@ -2,20 +2,24 @@
   <h6 class="card-header">Organisation</h6>
   <div class="card-body">
     <div class="row mt-2">
-      <div class="col-4 small" >
-        <form class="form-inline form-horizonta" >
+      <div class="col-4 small">
+        <form class="form-inline form-horizonta">
           <input type="text" class="form-control" id="orgnr" name="orgnr" placeholder="orgnr eller kundnr" [(ngModel)]="orgnr" (keyup.enter)="getOrganisation()"
-             />&nbsp;
-          <!--<i class="fa fa-search"></i>--> &nbsp;&nbsp;
-          <button type="submit" class="btn btn-primary btn-sm" id="submit"
-                (click)="getOrganisation()">H&auml;mta organisation</button>
+          />&nbsp;
+          <!--<i class="fa fa-search"></i>-->&nbsp;&nbsp;
+          <button type="submit" class="btn btn-primary btn-sm" id="submit" (click)="getOrganisation()">H&auml;mta organisation</button>
           &nbsp;&nbsp;{{errorMessage}}
         </form>
       </div>
       <!-- om error så skall det visas här isf orgnamn -->
-      <div class="col-7 font-weight-bold">&nbsp;{{organisation.orgnamn}}</div>
-      <div class="col-1">
-        <img class="img-responsive" height="100" width="100" src="{{organisation.logotype}}">
+      <div class="col-6 font-weight-bold">&nbsp;{{organisation.orgnamn}}</div>
+      <div class="col-2">
+        <div *ngIf="organisation.logotype != null">
+          <img class="img-responsive" height="100" width="100" src="{{organisation.logotype}}">
+        </div>
+        <div *ngIf="organisation.logotype === null">
+            <img class="img-responsive" height="100" width="100" src="assets/images/fafafa.png">
+          </div>
       </div>
     </div>
 
