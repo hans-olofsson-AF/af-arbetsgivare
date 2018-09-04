@@ -14,6 +14,8 @@ export class OmComponent implements OnInit {
   public current = 0;
   public items: Array<any>;
 
+  public collapse = true;
+
   constructor() { }
 
   ngOnInit() {

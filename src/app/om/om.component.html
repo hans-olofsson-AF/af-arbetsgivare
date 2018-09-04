@@ -1,3 +1,4 @@
+<!--
 <br>
 <p>
   <button type="button" class="btn btn-outline-primary btn-sm" (click)="toggle()" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
@@ -11,10 +12,9 @@
     </div>
   </div>
 </div>
+-->
 
 <h2>Angular 2 Accordion with Bootstrap CSS</h2>
-
-
 <div id="panel-group">
   <div class="panel panel-default" *ngFor="let item of items; let i = index">
     <div class="panel-heading" (click)="current = i">
@@ -38,3 +38,32 @@
     </div>
   </div>
 </div>
+
+<div id="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading" (click)="toggle()">
+      <h5 class="panel-title">
+        <div *ngIf="isCollapsed">
+          <i class="fa fa-angle-up">&nbsp;Organisation arbetsplatser</i>
+        </div>
+        <div *ngIf="!isCollapsed">
+          <i class="fa fa-angle-down">&nbsp;Organisation arbetsplatser</i>
+        </div>
+      </h5>
+    </div>
+    <div id="collapse1" class="panel-collapse" [class.collapse]='isCollapsed'>
+      <div class="card" style="width: 18rem;">
+        <!--<img class="card-img-top" src="..." alt="Card image cap">-->
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+https://bootsnipp.com/tags/accordion
+-->
