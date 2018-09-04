@@ -12,7 +12,7 @@ export class OmComponent implements OnInit {
   public buttonText = this.buttonTextCollapse;
 
   public current = 0;
- public items: Array<any>;
+  public items: Array<any>;
 
   constructor() { }
 
