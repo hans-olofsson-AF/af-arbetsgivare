@@ -48,11 +48,13 @@ export class StateService {
         console.log('error.status: ', error.status);
         if (error.status === 404) {
           this._organisation.next(new Organisation());
+          this._arbetsplats.next(new Arbetsplats());
           this._errorMessageOrganisation.next(
             'angivet organisations- eller kundnummer existerar ej'
           );
         } else {
           this._organisation.next(new Organisation());
+          this._arbetsplats.next(new Arbetsplats());
           this._errorMessageOrganisation.next(error.statusText);
         }
       }
